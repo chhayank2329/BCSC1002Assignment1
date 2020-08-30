@@ -20,6 +20,8 @@ public class Student {
         this.universityRollNumber = universityRollNumber;
         this.numberOfBooksIssued = numberOfBooksIssued;
         this.namesOfTheBooksIssued = new Book[numberOfBooksIssued];
+
+
         for (int index = 0; index < namesOfTheBooksIssued.length; index++) {
             namesOfTheBooksIssued[index] = new Book("Book" + (index + 1), "Author" + (index + 1), "1234567891234");
         }
