@@ -18,5 +18,8 @@ public class FrontDesk {
 }
 
 class Library {
+    void add() {
+
+    }
 
 }
