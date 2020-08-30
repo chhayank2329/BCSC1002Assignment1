@@ -33,9 +33,31 @@ public class FrontDesk {
             System.out.println("4. Exit.");
             System.out.println("Enter Your Choice (1...4): ");
             studentInput = scanner.nextInt();
-
-
-        } while (libraryDetails);
+            switch (studentInput) {
+                case 1 -> {
+                    libraryDetails.getCurrentlyAvailableBooks();
+                    System.out.println("Enter the name of the book you want to issue from the currently available books: ");
+                    scanner.nextLine();
+                    String bookName = scanner.nextLine();
+                    System.out.println("You have successfully issued " + bookName + " book.");
+                    studentDetails.setNumberOfBooksIssued(studentDetails.getNumberOfBooksIssued() + 1);
+                }
+                case 2 -> {
+                    System.out.println("Enter the name of the book you want to return: ");
+                    scanner.nextLine();
+                    String bookName = scanner.nextLine();
+                    System.out.println("You have successfully returned " + bookName + " book.");
+                    studentDetails.setNumberOfBooksIssued(studentDetails.getNumberOfBooksIssued() - 1);
+                }
+                case 3 -> {
+                    System.out.println("Number Of Books Issued By You Currently ---> " + studentDetails.getNumberOfBooksIssued());
+                    System.out.println("Names of Book Issued By You Up Till Now ---> ");
+                    studentDetails.printNamesOfBooksIssued();
+                }
+                case 4 -> System.out.println("Thank You!");
+                default -> System.out.println("Wrong Choice");
+            }
+        } while (studentInput != 4);
 
     }
 }
