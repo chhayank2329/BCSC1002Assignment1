@@ -1,6 +1,5 @@
 package definitions;
 
-
 public class Book {
     private String bookName;
     private String authorName;
@@ -11,5 +10,6 @@ public class Book {
         this.authorName = authorName;
         this.ISBNNumber = ISBNNumber;
     }
+
 }
 
