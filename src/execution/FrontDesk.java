@@ -23,5 +23,6 @@ public class FrontDesk {
         int numberOfBooksIssuedByStudent = scanner.nextInt();
         Student studentDetails = new Student(nameOfTheStudent, universityRollNumberOfStudent, numberOfBooksIssuedByStudent);
         Library libraryDetails = new Library();
+        int studentInput;
     }
 }
