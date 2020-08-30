@@ -16,3 +16,7 @@ public class FrontDesk {
         System.out.println("Exit.");
     }
 }
+
+class Library {
+
+}

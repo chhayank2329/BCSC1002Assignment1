@@ -2,7 +2,7 @@
 ## BCSC 1002 : Object-Oriented Programming
 #### Assignment 1 : Library Book Inventory System
 
-###### Author: [Divyansh Bhardwaj](https://github.com/dbc2201)
+###### Author: [Chhayank sharma]
 
 
 
