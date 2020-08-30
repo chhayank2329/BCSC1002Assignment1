@@ -49,4 +49,9 @@ public class Student {
     public void setNamesOfTheBooksIssued(Book[] namesOfTheBooksIssued) {
         this.namesOfTheBooksIssued = namesOfTheBooksIssued;
     }
-}
+
+    public void printNamesOfBooksIssued() {
+        for (Book bookName : namesOfTheBooksIssued) {
+            System.out.println(bookName);
+        }
+    }
