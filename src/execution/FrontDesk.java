@@ -58,7 +58,7 @@ public class FrontDesk {
                 default -> System.out.println("Wrong Choice");
             }
         } while (studentInput != 4);
-
+        scanner.close();
     }
 }
 
