@@ -7,4 +7,12 @@
 package definitions;
 
 public class Student {
+    private final String nameOfTheStudent;
+    private long universityRollNumber;
+    private int numberOfBooksIssued;
+    private Book[] namesOfTheBooksIssued;
+
+    public Student(String nameOfTheStudent) {
+        this.nameOfTheStudent = nameOfTheStudent;
+    }
 }
