@@ -6,6 +6,7 @@
  * */
 package execution;
 
+import definitions.Library;
 import definitions.Student;
 
 import java.util.Scanner;
@@ -21,5 +22,6 @@ public class FrontDesk {
         System.out.println("Number of books issued: ");
         int numberOfBooksIssuedByStudent = scanner.nextInt();
         Student studentDetails = new Student(nameOfTheStudent, universityRollNumberOfStudent, numberOfBooksIssuedByStudent);
+        Library libraryDetails = new Library();
     }
 }
