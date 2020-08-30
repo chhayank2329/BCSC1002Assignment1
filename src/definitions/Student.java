@@ -21,4 +21,32 @@ public class Student {
             namesOfTheBooksIssued[index] = new Book("Book" + (index + 1), "Author" + (index + 1), "1234567891234");
         }
     }
+
+    public String getNameOfTheStudent() {
+        return nameOfTheStudent;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
+
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
+    public void setNumberOfBooksIssued(int numberOfBooksIssued) {
+        this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
+    public Book[] getNamesOfTheBooksIssued() {
+        return namesOfTheBooksIssued.clone();
+    }
+
+    public void setNamesOfTheBooksIssued(Book[] namesOfTheBooksIssued) {
+        this.namesOfTheBooksIssued = namesOfTheBooksIssued;
+    }
 }
