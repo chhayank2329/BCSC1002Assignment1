@@ -19,6 +19,8 @@ public class FrontDesk {
 
 class Library {
     void add() {
+        System.out.println("Enter Book Name,Amount,ISBN Number");
+
 
     }
 
