@@ -6,6 +6,8 @@
  * */
 package execution;
 
+import java.util.Scanner;
+
 public class FrontDesk {
     public static void main(String[] args) {
         System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
@@ -20,6 +22,8 @@ public class FrontDesk {
 class Library {
     void add() {
         System.out.println("Enter Book Name,Amount,ISBN Number");
+        Scanner book_details = new Scanner(System.in);
+
     }
 
 }
